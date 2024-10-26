@@ -37,6 +37,24 @@ Types of modules :
     - User defined modules/ Local modules : Done by the developer to follow DRY principle 
     - Third-party modules : External modules, installed using npm (Node Package Module)
 
+------------------------------------------------------------------------------------------------------------------------------------
 
+# NPM
+ - npm : node package module
+ - package : collection of code/ modules
 
+ - commands : 
+    npm init : initialize a node server project
+        - package name:
+        - will create a package.json file
+        - package.json wil have metadata
+        - -y flag: default values
+
+    npm install : 
+    
+
+------------------------------------------------------------------------------------------------------
+
+#Third party packages
+    - nodemon: Nodemon - provides you with a command to run your server and apply changes while saving the file     (Live server)
 */
