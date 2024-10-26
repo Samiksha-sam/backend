@@ -19,4 +19,4 @@
 
 //  //cons of Node.js
 //     - Not suitable for CPU intensive operations.
-//     - Single threade d.
+//     - Single threaded.
