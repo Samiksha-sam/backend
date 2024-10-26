@@ -1,9 +1,10 @@
 {
   "name": "nodeserver1",
+  "type":"module",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "npx nodemon index.js"
   },
   "author": "Samiksha Ramteke  ",
   "license": "ISC",
