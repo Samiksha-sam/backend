@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon pathModule.js"
+    "start": "npx nodemon nodemailer.js"
   },
   "author": "Samiksha Ramteke",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.16",
     "nodemon": "^3.1.7"
   }
 }
