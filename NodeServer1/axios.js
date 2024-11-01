@@ -9,6 +9,7 @@
  * ------------------------------------------------------------------
  * 
  * axios : It allows you to easily send HTTP requests to interact with APIs.
+ *   - npm install axios
  *   - response has many things
  *   - Methods name related to HTTP methods. e.g : GET,POST
  *   - By default converts the data to JSON format

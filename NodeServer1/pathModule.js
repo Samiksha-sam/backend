@@ -5,7 +5,7 @@ Methods:
     - extname() : gives the extension, takes file name in arguments
     - parse() : returns an object for that path
     - join(): concatenates the paths given
-    - resolve(): resolves the given path
+    - resolve(): resolves the given path, gives absolute path
     
 
 
