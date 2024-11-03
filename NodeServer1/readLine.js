@@ -1,4 +1,4 @@
-/**
+/*
  * ReadLine
  * createInterface()
  * 
@@ -27,18 +27,20 @@ const server = http.createServer((req,res) => {
     if(req.url=='./favicon.ico'){
         return res.end()
     }
-    r1.question('Please enter your name',(name) => {
-        r1.question('Please enter your age',(age) => {
-            if(age>=18){
-                console.log(`${name} you are eligible to vote`)
-            }
-            else{
-                console.log(`${name} are not eligible to vote`)
-            }
-        })
-    })
+    // r1.question('Please enter your name',(name) => {
+    //     r1.question('Please enter your age',(age) => {
+    //         if(age>=18){
+    //             console.log(`${name} you are eligible to vote`)
+    //         }
+    //         else{
+    //             console.log(`${name} are not eligible to vote`)
+    //         }
+    //     })
+    // })
+
     res.end('hello sam')
     r1.close();
 })
 
 server.listen(3000)
+

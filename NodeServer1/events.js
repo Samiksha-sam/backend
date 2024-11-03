@@ -1,5 +1,10 @@
 /**
  * Event : user activity
+ * 
+ * Type of events:
+ *  - 'data' : readabble stream receives data/ chunks of data 
+ *  - 'end' : reasable stream has no more data to read
+ *  - 'error' : Error occured
  */
 
 // const http = require('http')
@@ -85,12 +90,20 @@ const server = http.createServer((req,res) => {
     if(req.url === '/favicon.ico'){
         return res.end()
     }
-    if(req.method === 'GET' && req.url==='/form'){
+    if(req.method === 'GET' && req.url==='/register'){
         const htmlData = fs.readFileSync('forms.html')
         res.end(htmlData)
-    }else if(req.method === 'POST' && req.url==='/process-data'){
-        console.log('request url is process data')
-        res.end('submitted')
+    }else if(req.method === 'GET' && req.url === '/about'){
+        res.end('ABOUT')
+    }else if(req.method === 'POST' && req.url==='/process-data-test'){
+        res.end('process-data-test')
+        req.on('data', (chunk) => {
+            console.log(chunk.toString())
+        })
+    
+        
+    }else if(req.method === 'PPOST' && req.url==='/process-data'){
+        res.end('Form Submitted')
     }
     else{
         res.end('we are learning')

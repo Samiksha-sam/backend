@@ -14,7 +14,7 @@ types of path:
     - absolute path: complete path ex: C:\users\samiksha\code\modules\index.java
 
 Reserved keywords for path
-    - __dirname : gives current working directory
+    - __dirname : gives the path of current working directory(absolute path)
     - __filename : gives path along with file name
 
 */
@@ -26,7 +26,9 @@ const server = http.createServer((req,res) => {
     if(req.url=='/favicon.ico'){
         return res.end()
     }
-    // console.log(__dirname)
+    console.log('resolve path is : ' + path.resolve('text1.txt'))
+    console.log('basename is : ' + path.basename('text1.txt'))
+    console.log('dir name : '+ __dirname)
     // console.log(__filename)
     // console.log(path.extname(__filename))
     // console.log(path.parse(__filename).name)
