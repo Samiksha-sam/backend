@@ -5,6 +5,14 @@ Backend
   - Express.js
   - MongoDB
 
-#Node.js 
 
-Browser : JavaScript Engine -> Responsible for proving JS runtime
+package.json : 
+scrpt for predefined scipts
+for ex : node index.s will start server
+similarly : 
+in package.json
+"scripts": {
+    "start" : "node index.js"
+}
+and on terminal npm start (will start server)
+
