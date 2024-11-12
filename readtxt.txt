@@ -1,5 +1,0 @@
-Express : 
-
-npm init : 
-    - setup a node project
-    - will create a package.json file
