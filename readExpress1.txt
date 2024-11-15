@@ -1,0 +1,30 @@
+Node js framework :
+    - Express
+    - Hapi.js
+    - Fastifyjs
+
+
+npm init : 
+    - setup a node project
+    - will create a package.json file
+
+
+
+express js:
+    - has http protocol integrated
+
+Response methods : 
+    - send() : string and JSON and buffer data / generic method
+       
+    - set() : to set headers for http response
+    - JSON() : return JSON method only
+    - status() : set the status code of the http 
+        - 100-199: Information
+        - 200-299: Sucess(200:OK, 201:created)
+        - 300-399: Rediraction (301: Moved Permentaly, 302: Found)
+        - 400-499: Client Error (400: Bad Request, 401: Unauthorized, 403: Forbidden, 404: Not Found )
+        - 500-599: Server error (500: Internal Server error, 501: Not Implenmented, 503: service unavailable) 
+
+    - sendFile() : display file to frontend, need absolute path
+    - download() : 
+    - redirect()
