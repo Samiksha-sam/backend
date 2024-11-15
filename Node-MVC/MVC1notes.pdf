@@ -1,0 +1,16 @@
+MVC : A widely used design pattern
+
+Model :- related to data (untill we learn DB, we are going to use dummy arrays)
+View :- HTML/template that is visible to user
+Controller :- a.k.a handler - core entity responsible for processing the incoming request
+
+
+working:
+    - user will make request to controller to manipulate data   
+    - that data (model) will update the view
+    - updates view will be seen
+    Example : 
+       1. 10 products shown to user
+       2. he deleted 1 product(via controller)
+       3. controller will undate/manipulate data(in model)
+       4. user will see 9 products in view

@@ -27,3 +27,4 @@ Response methods :
 
     - sendFile() : display file to frontend, need absolute path
     - download() : 
+    - redirect()
