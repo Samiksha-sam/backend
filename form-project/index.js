@@ -37,13 +37,36 @@ app.post('/users/login', loginUser)
 app.get('/users/samiksha', (req,res) => {
     res.render('user',{
         firstName: 'Samiksha',
-        lastName: 'Ramteke'
+        lastName: 'Ramteke',
+        avtar : 'https://reqres.in/img/faces/3-image.jpg',
+        gmail : 'samiksha@gmail.com',
+        isPremium : true,
+        skills : ['HTML','CSS','JavaScript']
     })
 })
 
-app.get('/users/pankaj', (req,res) => {
-    res.sendFile(__dirname + '/src/views/user1.html')
+app.get('/users/alex', (req,res) => {
+    res.render('user',{
+        firstName: 'Alex',
+        lastName: 'Laytes',
+        avtar : 'https://reqres.in/img/faces/6-image.jpg',
+        gmail : 'alex@gmail.com',
+        isPremium : false,
+        skills : ['HTML','CSS','JavaScript','Java','React.js']
+    })
 })
+
+app.get('/users/john', (req,res) => {
+    res.render('user',{
+        firstName: 'John',
+        lastName: 'Smith',
+        avtar : 'https://reqres.in/img/faces/8-image.jpg',
+        gmail : 'john@gmail.com',
+        isPremium : true,
+        skills : ['HTML','CSS','JavaScript','Node.js','Vue.js']
+    })
+})
+
 
 app.listen(3000, () => {
     console.log(`Server is running on port ${port}`)
