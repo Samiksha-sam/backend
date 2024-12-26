@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=firstName%> <%=lastName%></title>
+    <style>
+        body{
+            background-color: #eee;
+        }
+
+        .container{
+            background-color: white;
+            padding:20px;
+            margin: 20px auto;
+            text-align: center; 
+            width:min-content;
+            box-shadow: rgba(0,0,0,24) 0px 3px 8px;
+            border-radius: 5px
+        }
+
+        .premium{
+            margin-top: 10px;
+            background-color:lightgoldenrodyellow;
+            color : goldenrod;
+            border: 1px solid goldenrod;
+            border-radius: 5px;
+        }
+
+        img{
+            border-radius:50% ;
+
+        }
+
+        .skills-list{
+            padding: 0;
+            list-style:none
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <% if(isPremium){ %>
+            <div class="premium">
+                👑 Premium
+            </div>
+        <% } %>
+        
+        <h1><%=firstName%> <%=lastName%></h1>
+        <img src="<%=avtar%>" alt="">
+        <p><%=gmail%></p>
+
+        <h4>Skills</h4>
+        <ul class="skills-list">
+            <%skills.forEach((s) => {%>  
+                <li><%=s%></li>
+            <%})%>
+        </ul>
+        
+    </div>
+
+</body>
+</html>
